@@ -1,0 +1,56 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.headerBtn {
+  display: flex;
+  flex-direction: column;
+}
+.headerBtn::after {
+  position: relative;
+  left: 100%;
+  content: "";
+  border-bottom: white solid 1px;
+  width: 0;
+  transition: all 0.3s ease-in;
+}
+.headerBtn:hover::after {
+  position: relative;
+  left: 0;
+  content: "";
+
+  width: 100%;
+  transition: width 0.3s ease-in;
+}
+.container {
+  overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
