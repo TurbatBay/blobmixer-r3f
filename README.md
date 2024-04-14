@@ -1,9 +1,9 @@
-Cloned https://blobmixer.14islands.com/ using R3F, shader, typescript
-<br/>
-To start project use 
-<br/>
-  npm run dev 
-  <br/>
-  or 
-  <br/>
-  yarn dev
+# https://tea.xyz/what-is-this-file
+
+---
+
+version: 1.0.0
+codeOwners:
+
+- '0x12473Af00096978f91C29ACc6D23C92491e2a54F'
+  quorum: 1
